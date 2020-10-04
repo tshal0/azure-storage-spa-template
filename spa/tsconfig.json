@@ -1,0 +1,30 @@
+{
+    "include": [
+        "src/**/*.tsx",
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "**/node_modules"
+    ],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "src/*"
+            ],
+            "test/*": [
+                "test/*"
+            ],
+            "components": [
+                "src/_components"
+            ]
+        },
+        "target": "ES2019",
+        "moduleResolution": "node",
+        "strict": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "jsx": "react",
+        // "outDir": "dist"
+    }
+}
