@@ -9,7 +9,7 @@ const express = require('express');
 const path = require('path');
 const port = process.env.PORT || 3000;
 const app = express();
-const spa = __dirname + '/spa/dist';
+const spa = __dirname + '/dist';
 console.log(__dirname);
 // serve static assets normally
 app.use(express.static(spa));
